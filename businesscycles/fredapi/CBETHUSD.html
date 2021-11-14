@@ -2477,17 +2477,141 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;changepoint_prior_scale&#39;: 1.0, &#39;seasonality_prior_scale&#39;: 1.0, &#39;rmse&#39;: 872.0851853995958}
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">-----------------------------------------------------------------</span>
+<span class="ne">TimeoutError</span><span class="g g-Whitespace">                    </span>Traceback (most recent call last)
+<span class="nn">/usr/lib/python3.9/urllib/request.py</span> in <span class="ni">do_open</span><span class="nt">(self, http_class, req, **http_conn_args)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1345</span>             <span class="k">try</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">1346</span>                 <span class="n">h</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">get_method</span><span class="p">(),</span> <span class="n">req</span><span class="o">.</span><span class="n">selector</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1347</span>                           <span class="n">encode_chunked</span><span class="o">=</span><span class="n">req</span><span class="o">.</span><span class="n">has_header</span><span class="p">(</span><span class="s1">&#39;Transfer-encoding&#39;</span><span class="p">))</span>
+
+<span class="nn">/usr/lib/python3.9/http/client.py</span> in <span class="ni">request</span><span class="nt">(self, method, url, body, headers, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1278</span>         <span class="sd">&quot;&quot;&quot;Send a complete request to the server.&quot;&quot;&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1279</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_send_request</span><span class="p">(</span><span class="n">method</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span> <span class="n">encode_chunked</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1280</span> 
+
+<span class="nn">/usr/lib/python3.9/http/client.py</span> in <span class="ni">_send_request</span><span class="nt">(self, method, url, body, headers, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1324</span>             <span class="n">body</span> <span class="o">=</span> <span class="n">_encode</span><span class="p">(</span><span class="n">body</span><span class="p">,</span> <span class="s1">&#39;body&#39;</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1325</span>         <span class="bp">self</span><span class="o">.</span><span class="n">endheaders</span><span class="p">(</span><span class="n">body</span><span class="p">,</span> <span class="n">encode_chunked</span><span class="o">=</span><span class="n">encode_chunked</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1326</span> 
+
+<span class="nn">/usr/lib/python3.9/http/client.py</span> in <span class="ni">endheaders</span><span class="nt">(self, message_body, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1273</span>             <span class="k">raise</span> <span class="n">CannotSendHeader</span><span class="p">()</span>
+<span class="ne">-&gt; </span><span class="mi">1274</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_send_output</span><span class="p">(</span><span class="n">message_body</span><span class="p">,</span> <span class="n">encode_chunked</span><span class="o">=</span><span class="n">encode_chunked</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1275</span> 
+
+<span class="nn">/usr/lib/python3.9/http/client.py</span> in <span class="ni">_send_output</span><span class="nt">(self, message_body, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1033</span>         <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">_buffer</span><span class="p">[:]</span>
+<span class="ne">-&gt; </span><span class="mi">1034</span>         <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1035</span> 
+
+<span class="nn">/usr/lib/python3.9/http/client.py</span> in <span class="ni">send</span><span class="nt">(self, data)</span>
+<span class="g g-Whitespace">    </span><span class="mi">973</span>             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">auto_open</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">974</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">975</span>             <span class="k">else</span><span class="p">:</span>
+
+<span class="nn">/usr/lib/python3.9/http/client.py</span> in <span class="ni">connect</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1440</span> 
+<span class="ne">-&gt; </span><span class="mi">1441</span>             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1442</span> 
+
+<span class="nn">/usr/lib/python3.9/http/client.py</span> in <span class="ni">connect</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">944</span>         <span class="sd">&quot;&quot;&quot;Connect to the host and port specified in __init__.&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">945</span>         <span class="bp">self</span><span class="o">.</span><span class="n">sock</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_create_connection</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">946</span>             <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">host</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">port</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">source_address</span><span class="p">)</span>
+
+<span class="nn">/usr/lib/python3.9/socket.py</span> in <span class="ni">create_connection</span><span class="nt">(address, timeout, source_address)</span>
+<span class="g g-Whitespace">    </span><span class="mi">843</span>         <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">844</span>             <span class="k">raise</span> <span class="n">err</span>
+<span class="g g-Whitespace">    </span><span class="mi">845</span>         <span class="k">finally</span><span class="p">:</span>
+
+<span class="nn">/usr/lib/python3.9/socket.py</span> in <span class="ni">create_connection</span><span class="nt">(address, timeout, source_address)</span>
+<span class="g g-Whitespace">    </span><span class="mi">831</span>                 <span class="n">sock</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="n">source_address</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">832</span>             <span class="n">sock</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">sa</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">833</span>             <span class="c1"># Break explicitly a reference cycle</span>
+
+<span class="ne">TimeoutError</span>: [Errno 110] Connection timed out
+
+<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
+
+<span class="ne">URLError</span><span class="g g-Whitespace">                        </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="n">e9a9bff3275b</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">apikey</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;APIKEY&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">fred</span> <span class="o">=</span> <span class="n">Fred</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="n">apikey</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">7</span> <span class="n">collect_tune_and_predict</span><span class="p">(</span><span class="s1">&#39;CBETHUSD&#39;</span><span class="p">,</span><span class="n">fred</span><span class="p">,</span><span class="mi">2</span><span class="o">*</span><span class="mi">365</span><span class="p">)</span>
+
+<span class="nn">~/Dropbox/R/businesscycles/businesscycles/fredapi/functions.py</span> in <span class="ni">collect_tune_and_predict</span><span class="nt">(item, fred, n_ahead)</span>
+<span class="g g-Whitespace">     </span><span class="mi">66</span>                         <span class="p">}</span>
+<span class="g g-Whitespace">     </span><span class="mi">67</span>     <span class="c1"># Get Data</span>
+<span class="ne">---&gt; </span><span class="mi">68</span>     <span class="n">data</span> <span class="o">=</span> <span class="n">fred</span><span class="o">.</span><span class="n">get_series_latest_release</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">69</span>     <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">70</span>     <span class="n">data</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">]</span>
+
+<span class="nn">~/.local/lib/python3.9/site-packages/fredapi/fred.py</span> in <span class="ni">get_series_latest_release</span><span class="nt">(self, series_id)</span>
+<span class="g g-Whitespace">    </span><span class="mi">156</span>             <span class="n">a</span> <span class="n">Series</span> <span class="n">where</span> <span class="n">each</span> <span class="n">index</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">observation</span> <span class="n">date</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">value</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">data</span> <span class="k">for</span> <span class="n">the</span> <span class="n">Fred</span> <span class="n">series</span>
+<span class="g g-Whitespace">    </span><span class="mi">157</span>         <span class="s2">&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">158</span><span class="s2">         return self.get_series(series_id)</span>
+<span class="g g-Whitespace">    </span><span class="mi">159</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">160</span><span class="s2">     def get_series_first_release(self, series_id):</span>
+
+<span class="nn">~/.local/lib/python3.9/site-packages/fredapi/fred.py</span> in <span class="ni">get_series</span><span class="nt">(self, series_id, observation_start, observation_end, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">129</span><span class="s2">         if kwargs.keys():</span>
+<span class="g g-Whitespace">    </span><span class="mi">130</span><span class="s2">             url += &#39;&amp;&#39; + urlencode(kwargs)</span>
+<span class="ne">--&gt; </span><span class="mi">131</span><span class="s2">         root = self.__fetch_data(url)</span>
+<span class="g g-Whitespace">    </span><span class="mi">132</span><span class="s2">         if root is None:</span>
+<span class="g g-Whitespace">    </span><span class="mi">133</span><span class="s2">             raise ValueError(&#39;No data exists for series id: &#39; + series_id)</span>
+
+<span class="nn">~/.local/lib/python3.9/site-packages/fredapi/fred.py</span> in <span class="ni">__fetch_data</span><span class="nt">(self, url)</span>
+<span class="g g-Whitespace">     </span><span class="mi">62</span><span class="s2">         url += &#39;&amp;api_key=&#39; + self.api_key</span>
+<span class="g g-Whitespace">     </span><span class="mi">63</span><span class="s2">         try:</span>
+<span class="ne">---&gt; </span><span class="mi">64</span><span class="s2">             response = urlopen(url)</span>
+<span class="g g-Whitespace">     </span><span class="mi">65</span><span class="s2">             root = ET.fromstring(response.read())</span>
+<span class="g g-Whitespace">     </span><span class="mi">66</span><span class="s2">         except HTTPError as exc:</span>
+
+<span class="nn">/usr/lib/python3.9/urllib/request.py</span> in <span class="ni">urlopen</span><span class="nt">(url, data, timeout, cafile, capath, cadefault, context)</span>
+<span class="g g-Whitespace">    </span><span class="mi">212</span><span class="s2">     else:</span>
+<span class="g g-Whitespace">    </span><span class="mi">213</span><span class="s2">         opener = _opener</span>
+<span class="ne">--&gt; </span><span class="mi">214</span><span class="s2">     return opener.open(url, data, timeout)</span>
+<span class="g g-Whitespace">    </span><span class="mi">215</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">216</span><span class="s2"> def install_opener(opener):</span>
+
+<span class="nn">/usr/lib/python3.9/urllib/request.py</span> in <span class="ni">open</span><span class="nt">(self, fullurl, data, timeout)</span>
+<span class="g g-Whitespace">    </span><span class="mi">515</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">516</span><span class="s2">         sys.audit(&#39;urllib.Request&#39;, req.full_url, req.data, req.headers, req.get_method())</span>
+<span class="ne">--&gt; </span><span class="mi">517</span><span class="s2">         response = self._open(req, data)</span>
+<span class="g g-Whitespace">    </span><span class="mi">518</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">519</span><span class="s2">         # post-process response</span>
+
+<span class="nn">/usr/lib/python3.9/urllib/request.py</span> in <span class="ni">_open</span><span class="nt">(self, req, data)</span>
+<span class="g g-Whitespace">    </span><span class="mi">532</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">533</span><span class="s2">         protocol = req.type</span>
+<span class="ne">--&gt; </span><span class="mi">534</span><span class="s2">         result = self._call_chain(self.handle_open, protocol, protocol +</span>
+<span class="g g-Whitespace">    </span><span class="mi">535</span><span class="s2">                                   &#39;_open&#39;, req)</span>
+<span class="g g-Whitespace">    </span><span class="mi">536</span><span class="s2">         if result:</span>
+
+<span class="nn">/usr/lib/python3.9/urllib/request.py</span> in <span class="ni">_call_chain</span><span class="nt">(self, chain, kind, meth_name, *args)</span>
+<span class="g g-Whitespace">    </span><span class="mi">492</span><span class="s2">         for handler in handlers:</span>
+<span class="g g-Whitespace">    </span><span class="mi">493</span><span class="s2">             func = getattr(handler, meth_name)</span>
+<span class="ne">--&gt; </span><span class="mi">494</span><span class="s2">             result = func(*args)</span>
+<span class="g g-Whitespace">    </span><span class="mi">495</span><span class="s2">             if result is not None:</span>
+<span class="g g-Whitespace">    </span><span class="mi">496</span><span class="s2">                 return result</span>
+
+<span class="nn">/usr/lib/python3.9/urllib/request.py</span> in <span class="ni">https_open</span><span class="nt">(self, req)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1387</span><span class="s2"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">1388</span><span class="s2">         def https_open(self, req):</span>
+<span class="ne">-&gt; </span><span class="mi">1389</span><span class="s2">             return self.do_open(http.client.HTTPSConnection, req,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1390</span><span class="s2">                 context=self._context, check_hostname=self._check_hostname)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1391</span><span class="s2"> </span>
+
+<span class="nn">/usr/lib/python3.9/urllib/request.py</span> in <span class="ni">do_open</span><span class="nt">(self, http_class, req, **http_conn_args)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1347</span><span class="s2">                           encode_chunked=req.has_header(&#39;Transfer-encoding&#39;))</span>
+<span class="g g-Whitespace">   </span><span class="mi">1348</span><span class="s2">             except OSError as err: # timeout error</span>
+<span class="ne">-&gt; </span><span class="mi">1349</span><span class="s2">                 raise URLError(err)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1350</span><span class="s2">             r = h.getresponse()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1351</span><span class="s2">         except:</span>
+
+<span class="ne">URLError</span>: &lt;urlopen error [Errno 110] Connection timed out&gt;
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;fig1&#39;: &lt;Figure size 720x432 with 1 Axes&gt;,
- &#39;fig2&#39;: &lt;Figure size 648x648 with 3 Axes&gt;,
- &#39;fig3&#39;: &lt;Figure size 720x432 with 1 Axes&gt;}
-</pre></div>
-</div>
-<img alt="../../_images/CBETHUSD_1_5.png" src="../../_images/CBETHUSD_1_5.png" />
-<img alt="../../_images/CBETHUSD_1_6.png" src="../../_images/CBETHUSD_1_6.png" />
-<img alt="../../_images/CBETHUSD_1_7.png" src="../../_images/CBETHUSD_1_7.png" />
 </div>
 </div>
 </div>
