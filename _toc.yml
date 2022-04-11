@@ -1,0 +1,71 @@
+format: jb-book
+root: businesscycles/intro
+parts:
+- caption: Favorites
+  chapters:
+  - file: businesscycles/fredapi/T10YFF
+  - file: businesscycles/fredapi/T5YFF
+  - file: businesscycles/fredapi/T1YFF
+  - file: businesscycles/fredapi/T6MFF
+  - file: businesscycles/fredapi/T3MFF
+  - file: businesscycles/fredapi/DGS10
+  - file: businesscycles/fredapi/T10Y3M
+  - file: businesscycles/fredapi/T10Y2Y
+  - file: businesscycles/fredapi/T10YIE
+  - file: businesscycles/fredapi/T5YIE
+  - file: businesscycles/fredapi/MORTGAGE30US
+  - file: businesscycles/fredapi/DTWEXBGS
+  - file: businesscycles/fredapi/BOGMBASE
+  - file: businesscycles/fredapi/CPALTT01USM659N
+  - file: businesscycles/fredapi/GFDEGDQ188S
+  - file: businesscycles/fredapi/SP500
+  - file: businesscycles/fredapi/VIXCLS
+- caption: DST
+  chapters:
+  - file: businesscycles/dst/BYGV88.
+  - file: businesscycles/dst/EJ14.
+- caption: Yahoo Metals
+  chapters:
+  - file: businesscycles/yahoo_metals/ALI
+  - file: businesscycles/yahoo_metals/GC
+  - file: businesscycles/yahoo_metals/HG
+  - file: businesscycles/yahoo_metals/PA
+  - file: businesscycles/yahoo_metals/PL
+  - file: businesscycles/yahoo_metals/SI
+  - file: businesscycles/yahoo_metals/CL
+  - file: businesscycles/yahoo_metals/HO
+  - file: businesscycles/yahoo_metals/NG
+  - file: businesscycles/yahoo_metals/ZC
+  - file: businesscycles/yahoo_metals/ZO
+  - file: businesscycles/yahoo_metals/ZR
+  - file: businesscycles/yahoo_metals/ZL
+  - file: businesscycles/yahoo_metals/GF
+  - file: businesscycles/yahoo_metals/HE
+  - file: businesscycles/yahoo_metals/LE
+  - file: businesscycles/yahoo_metals/CC
+  - file: businesscycles/yahoo_metals/KC
+  - file: businesscycles/yahoo_metals/CT
+  - file: businesscycles/yahoo_metals/OJ
+  - file: businesscycles/yahoo_metals/SB
+- caption: Yahoo Currency
+  chapters:
+  - file: businesscycles/yahoo_currencies/CHFDKK
+  - file: businesscycles/yahoo_currencies/GBPDKK
+  - file: businesscycles/yahoo_currencies/NOKDKK
+  - file: businesscycles/yahoo_currencies/SEKDKK
+  - file: businesscycles/yahoo_currencies/USDDKK
+  - file: businesscycles/yahoo_currencies/AUDDKK
+  - file: businesscycles/yahoo_currencies/NZDDKK
+  - file: businesscycles/yahoo_currencies/JPYDKK
+  - file: businesscycles/yahoo_currencies/CADDKK
+  - file: businesscycles/yahoo_currencies/HUFDKK
+  - file: businesscycles/yahoo_currencies/CNYDKK
+  - file: businesscycles/yahoo_currencies/HKDDKK
+  - file: businesscycles/yahoo_currencies/SGDDKK
+  - file: businesscycles/yahoo_currencies/INRDKK
+  - file: businesscycles/yahoo_currencies/MXNDKK
+  - file: businesscycles/yahoo_currencies/IDRDKK
+  - file: businesscycles/yahoo_currencies/RUBDKK
+  - file: businesscycles/yahoo_currencies/ZARDKK
+  - file: businesscycles/yahoo_currencies/MYRDKK
+  - file: businesscycles/yahoo_currencies/THBDKK

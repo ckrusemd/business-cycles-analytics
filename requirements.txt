@@ -1,0 +1,17 @@
+jupyter-book
+matplotlib
+numpy
+ghp-import
+fredapi
+pandas
+plotly
+numpy
+python-dotenv
+pandas-datareader
+pytz
+convertdate
+lunarcalendar
+holidays
+yfinance
+tqdm
+runipy
