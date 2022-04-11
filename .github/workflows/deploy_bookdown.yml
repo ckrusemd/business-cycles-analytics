@@ -17,7 +17,7 @@ jobs:
       - name: Environment Variables
         run: echo FRED_API=${{ secrets.APIKEY }} >> .env
       - name: Render Book from Action
-        uses: ckrusemd/jupyterbook-action@v0.11
+        uses: ckrusemd/jupyterbook-action@v0.12
         with:
           generatefile: generate_files.ipynb
       - uses: actions/upload-artifact@v1
