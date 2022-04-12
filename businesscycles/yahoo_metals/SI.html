@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>(GC=F): Gold &#8212; Business Cycles</title>
+    <title>(SI=F): Silver &#8212; Business Cycles</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,8 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="(HG=F): Copper" href="HG.html" />
-    <link rel="prev" title="(ALI=F): Aluminum" href="ALI.html" />
+    <link rel="next" title="(CHFDKK=X): CHF/DKK" href="../yahoo_currencies/CHFDKK.html" />
+    <link rel="prev" title="(PL=F): Platinum" href="PL.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -104,8 +104,8 @@ const thebe_selector_output = ".output, .cell_output"
    (ALI=F): Aluminum
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="GC.html">
    (GC=F): Gold
   </a>
  </li>
@@ -124,8 +124,8 @@ const thebe_selector_output = ".output, .cell_output"
    (PL=F): Platinum
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SI.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    (SI=F): Silver
   </a>
  </li>
@@ -202,7 +202,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/businesscycles/yahoo_metals/GC.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/businesscycles/yahoo_metals/SI.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -227,7 +227,7 @@ const thebe_selector_output = ".output, .cell_output"
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/ckrusemd/businesscycles/master?urlpath=tree/businesscycles/yahoo_metals/GC.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ckrusemd/businesscycles/master?urlpath=tree/businesscycles/yahoo_metals/SI.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
@@ -251,7 +251,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>(GC=F): Gold</h1>
+                <h1>(SI=F): Silver</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -269,16 +269,16 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="gc-f-gold">
-<h1>(GC=F): Gold<a class="headerlink" href="#gc-f-gold" title="Permalink to this headline">¶</a></h1>
+<div class="tex2jax_ignore mathjax_ignore section" id="si-f-silver">
+<h1>(SI=F): Silver<a class="headerlink" href="#si-f-silver" title="Permalink to this headline">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">collect_tune_and_predict</span><span class="p">(</span><span class="s1">&#39;GC=F&#39;</span><span class="p">,</span><span class="mi">1</span><span class="o">*</span><span class="mi">365</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">collect_tune_and_predict</span><span class="p">(</span><span class="s1">&#39;SI=F&#39;</span><span class="p">,</span><span class="mi">1</span><span class="o">*</span><span class="mi">365</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;changepoint_prior_scale&#39;: 1.0, &#39;seasonality_prior_scale&#39;: 1.0, &#39;rmse&#39;: 21.6873789406914}
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;changepoint_prior_scale&#39;: 1.0, &#39;seasonality_prior_scale&#39;: 1.0, &#39;rmse&#39;: 1.0092813241704028}
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;fig1&#39;: &lt;Figure size 720x432 with 1 Axes&gt;,
@@ -286,9 +286,9 @@ const thebe_selector_output = ".output, .cell_output"
  &#39;fig3&#39;: &lt;Figure size 720x432 with 1 Axes&gt;}
 </pre></div>
 </div>
-<img alt="../../_images/GC_2_12.png" src="../../_images/GC_2_12.png" />
-<img alt="../../_images/GC_2_13.png" src="../../_images/GC_2_13.png" />
-<img alt="../../_images/GC_2_14.png" src="../../_images/GC_2_14.png" />
+<img alt="../../_images/SI_2_12.png" src="../../_images/SI_2_12.png" />
+<img alt="../../_images/SI_2_13.png" src="../../_images/SI_2_13.png" />
+<img alt="../../_images/SI_2_14.png" src="../../_images/SI_2_14.png" />
 </div>
 </div>
 </div>
@@ -318,17 +318,17 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="ALI.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="PL.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">(ALI=F): Aluminum</p>
+            <p class="prev-next-title">(PL=F): Platinum</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="HG.html" title="next page">
+    <a class='right-next' id="next-link" href="../yahoo_currencies/CHFDKK.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">(HG=F): Copper</p>
+        <p class="prev-next-title">(CHFDKK=X): CHF/DKK</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
