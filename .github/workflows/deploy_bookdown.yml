@@ -22,8 +22,8 @@ jobs:
           generatefile: generate_files.ipynb
       - uses: actions/upload-artifact@v1
         with:
-          name: _book
-          path: _book/
+          name: _build
+          path: _build/
 
   checkout-and-deploy:
     runs-on: ubuntu-latest
@@ -34,12 +34,12 @@ jobs:
     - name: Download artifact
       uses: actions/download-artifact@v2
       with:
-        name: _book # optional
-        path: _book # optional
+        name: _build # optional
+        path: _build/ # optional
     - name: Deploy to GitHub Pages
       uses: Cecilapp/GitHub-Pages-deploy@v3
       with:
-        build_dir: /github/workspace/_build
+        build_dir: _build/
         email: ${{ secrets.EMAIL }}  #optional
         jekyll: no                     # optional
       env:
