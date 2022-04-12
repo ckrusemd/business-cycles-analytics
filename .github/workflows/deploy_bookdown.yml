@@ -39,10 +39,10 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: Cecilapp/GitHub-Pages-deploy@v3
       with:
-        build_dir: _build/
+        build_dir: _build/html/
         email: ${{ secrets.EMAIL }}  #optional
         jekyll: no                     # optional
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         EMAIL: ${{ secrets.EMAIL }}
-        BUILD_DIR: _book/
+        BUILD_DIR: _build/
