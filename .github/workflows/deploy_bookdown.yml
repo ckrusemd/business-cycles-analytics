@@ -19,7 +19,7 @@ jobs:
       - name: Render Book from Action
         uses: ckrusemd/jupyterbook-action@v0.17
         with:
-          generatefile: generate_files.ipynb
+          generatefile: generate_data.ipynb
           #generatefile: error.ipynb
       - uses: actions/upload-artifact@v1
         with:
