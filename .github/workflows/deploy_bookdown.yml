@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Environment Variables
-        run: echo FRED_API=${{ secrets.APIKEY }} >> .env
+        run: echo APIKEY=${{ secrets.APIKEY }} >> .env
       - name: Render Book from Action
         uses: ckrusemd/jupyterbook-action@v0.17
         with:
