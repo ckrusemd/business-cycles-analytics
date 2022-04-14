@@ -57,8 +57,8 @@ def subtract_one_year(timestamp):
 
 def collect_tune_and_predict(item,fred,n_ahead):
     param_grid =    {  
-            'changepoint_prior_scale': [0.001, 0.01, 0.1, 1.0, 2.5, 5.0, 7.5, 10.0, 20.0],
-            'seasonality_prior_scale': [0.001, 0.01, 0.1, 1.0, 2.5, 5.0, 7.5, 10.0, 20.0],
+            'changepoint_prior_scale': [0.001, 0.01, 0.1, 1.0, 2.5, 5.0, 7.5],
+            'seasonality_prior_scale': [0.001, 0.01, 0.1, 1.0, 2.5, 5.0, 7.5],
                         }
     #param_grid =    {  
     #        'changepoint_prior_scale': [1.0],
